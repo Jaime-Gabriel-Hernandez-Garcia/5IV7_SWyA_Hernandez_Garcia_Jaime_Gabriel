@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="css/styleCesar.css">
 </head>
 <body>
-    Este es un ejemplo para poder cifrar un texto con el algoritmo de césar.
+    <p class="txtEjemplo"> 
+        Este es un ejemplo para poder cifrar un texto con el algoritmo de césar.
+    </p>
 
-    <br>
-    <br>
-    <br>
-
+    <div class="txtTarea">
     Tarea:
-
+    <br>
     Voy a querer que no sea constante el desplazamiento y que lo pueda ingresar
     adentro de un campo de texto, deberan de aplicar la operacion modulo
     si me paso de 27 letras
@@ -24,15 +23,23 @@
 
     porque van a agregar la ñ
 
+    </div>
+
+    <center>
     <br>
     <br>
-    <textarea id="cadena" cols="30" rows="10"></textarea>
+    <textarea id="cadena" cols="20" rows="5"></textarea>
+    
+    <textarea id="operacion" cols="20" rows="5"></textarea>
+
     <br>
     <p><input type="button" value="Cifrar" onclick="cifrar()" >
         <input type="button" value="Descifrar" onclick="descifrar()" ></p>
-    <div id="resultado" >
+
+    <div id="resultado" class="txtCifrado">
 
     </div>
+    </center>
 
     <script src="js/CifradoCesar.js" ></script>
 
