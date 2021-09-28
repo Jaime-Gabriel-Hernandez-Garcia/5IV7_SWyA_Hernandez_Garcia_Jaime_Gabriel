@@ -7,7 +7,7 @@ var cesar = cesar || (function(){
                     'm', 'n', 'ñ' ,'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 
                         'x', 'y', 'z'];
             var l = abc.length;
-
+  
             //necesitamos obtener la posicion que va  a venir por parte 
             //de la llave privada
 
