@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrados Cesar y Viggenere</title>
+    <link rel="stylesheet" href="CSS/EstiloIndex.css">
+
+</head>
+<body>
+    <div class="Rectangulo1">
+
+    </div>
+
+    <div class="Rectangulo2">
+
+    </div>
+
+    <text class="Titulo">
+        Cifrados
+    </text>
+
+    <div class="textoCifrdo">
+        <input type="text" id="cadena" class="mensajeCesar" placeholder="Mensaje" > .
+
+        <input type="text" id="operacion" class="operacionCesar" placeholder="Ejemplo: 5mod27"> 
+    </div>
+
+    <a href="Cesar.html">
+        <div class="radioCesar">
+            <input type="radio" id="radioCifrado"  name= "tipoCifrado" value="Cifrado"> Cifrado Cesar
+        </div>
+    </a>
+
+    <div class="radiovigenere" >
+            <input type="radio" id="radioCifrado" name= "tipoCifrado" value="Cifrado Viggenere"> Cifrado Viggenere      
+    </div>
+
+    <input type="button" class="botonCesarCifrar" value="Cifrar" onclick="cifrar()"> 
+    <input type="button" class="botonCesarDescifrar" value="Descifrar" onclick="descifrar()">
+
+    <label id="resultado" class="mensajeresultado"></label>
+
+
+    <script src="JS/Cifrados.js"></script>
+
+</body>
+</html>
