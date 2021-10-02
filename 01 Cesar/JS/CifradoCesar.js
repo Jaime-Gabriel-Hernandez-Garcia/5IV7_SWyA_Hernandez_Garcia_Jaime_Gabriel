@@ -11,6 +11,8 @@ var cesar = cesar || (function(){
             //necesitamos obtener la posicion que va  a venir por parte 
             //de la llave privada
 
+           
+
             return function(c){
                 //vamos a saber la posicion
                 var i = abc.indexOf(c.toLowerCase());
@@ -399,5 +401,6 @@ function descifrar(){
         cesar.decode(document.getElementById("cadena").value, 27);
     }
 
-
+    
 }
+

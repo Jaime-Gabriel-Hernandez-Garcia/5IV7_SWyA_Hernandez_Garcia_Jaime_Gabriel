@@ -21,26 +21,33 @@
         Cifrados
     </text>
 
+    <div class="adornoCadena1"></div>
+    <div class="adornoCadena2"></div>
+
     <div class="textoCifrdo">
         <input type="text" id="cadena" class="mensajeCesar" placeholder="Mensaje" > .
 
         <input type="text" id="clave" class="operacionCesar" placeholder="Clave"> 
     </div>
 
-    <a href="Cesar.html">
-        <div class="radioCesar">
-            <input type="radio" id="radioCifrado"  value="Cifrado"> Cifrado Cesar
-        </div>
-    </a>
-
-    <div class="radiovigenere" >
-            <input type="radio" id="radioCifrado" value="Cifrado Viggenere"> Cifrado Viggenere      
-    </div>
-
-    <input type="button" class="botonCesarCifrar" value="Cifrar" > 
-    <input type="button" class="botonCesarDescifrar" value="Descifrar">
+ 
+    <input type="button" class="botonCesarCifrar" value="Cifrar" onclick="cifrar()" > 
+    <input type="button" class="botonCesarDescifrar" value="Descifrar" onclick="descifrar()">
 
     <label id="resultado" class="mensajeresultado"></label>
+
+    <a href="index.html"> 
+        <input type="button" class="botonRegreso" value="Regresar" >
+    </a>
+
+    <div class="Rectangulofooter"></div>
+
+    <footer>
+        <br>
+        Hernández García Jaime Gabriel
+        <br>
+        5IV7
+    </footer>
 
     <script src="JS/CifradoViggenere.js"></script>
 

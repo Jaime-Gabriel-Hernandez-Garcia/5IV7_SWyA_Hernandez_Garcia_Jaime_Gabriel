@@ -71,6 +71,21 @@ var cesar = cesar || (function(){
 
 function cifrar(){
 
+    const regex = /(1-27)+ \mod\ + (1-27)$/;
+
+    if((document.getElementById("operacion").value) == ""){
+        alert("Llena el campo de operación por favor");
+    }
+
+    if(!regex.test((document.getElementById("operacion").value))){
+        alert("Comprobando la operación");
+        
+    }
+
+    if((document.getElementById("cadena").value) ==  "" ){
+        alert("Llena el campo de mensaje por favor");
+    }
+
     if((document.getElementById("operacion").value) == "1mod27"){
         document.getElementById("resultado").innerHTML =
         cesar.encode(document.getElementById("cadena").value, 1);
@@ -234,6 +249,22 @@ function cifrar(){
 
 
 function descifrar(){
+
+    const regex = /(1-27)+ \mod\ + (1-27)$/;
+
+    if((document.getElementById("operacion").value) == ""){
+        alert("Llena el campo de operación por favor");
+    }
+
+    if(!regex.test((document.getElementById("operacion").value))){
+        alert("Comprobando la operación");
+        
+    }
+
+    if((document.getElementById("cadena").value) ==  "" ){
+        alert("Llena el campo de mensaje por favor");
+    }
+
 
     if((document.getElementById("operacion").value) == "1mod27"){
         document.getElementById("resultado").innerHTML =

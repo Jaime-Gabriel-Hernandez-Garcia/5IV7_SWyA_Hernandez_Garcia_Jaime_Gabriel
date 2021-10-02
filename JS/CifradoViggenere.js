@@ -10,9 +10,9 @@ const abc = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',
 let key = "";
 
 
-$(document).ready(function(){
-    
-    $('#ci').click(function(){
+//$(document).ready(function(){
+
+    /*$('#ci').click(*/function cifrar(){
 
         //para cifrar vamos a usar la funcion
         // y = (x+z)mod27 pq estamos usando la ñ
@@ -55,14 +55,14 @@ $(document).ready(function(){
                 newMess += abc[newVal];  //mensaje cifrado
             }
             //imprimir el resultado
-            document.getElementById("resultado").value = newMess;
+            document.getElementById("resultado").innerHTML = newMess;
         }else{
             //aqui es si no se cumple las condiciones
         }
 
 
-    });
-    $('#de').click(function(){
+    }//);
+    /*$('#de').click(*/ function descifrar(){
 
         //para cifrar vamos a usar la funcion
         // y = (x+z)mod27 pq estamos usando la ñ
@@ -105,15 +105,15 @@ $(document).ready(function(){
                 newMess += abc[newVal];  //mensaje decifrado
             }
             //imprimir el resultado
-            document.getElementById('resultado').value = newMess;
+            document.getElementById('resultado').innerHTML = newMess;
         }else{
             //aqui es si no se cumple las condiciones
         }
 
 
-    });
+    }//);
 
-});
+//});
 
 //cambio
 
@@ -124,6 +124,7 @@ function change(posm, posk){
 }
 
 function rechange(posm, posk){
+    /*
     let val = 0;
     if((posm-posk)>=0){
         val = (posm+posk)%27;
@@ -131,6 +132,9 @@ function rechange(posm, posk){
         val = (posm-posk+27)%27;
     }
     return val;
+    */
+   let y = (posm-posk+27)%27;
+   return y;
 }
 
 function getPosition(letra){
@@ -192,4 +196,5 @@ function sz(){
 
     alert("La clave no puede ser mayor que el mensaje");
 }
+
 
