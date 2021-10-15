@@ -1,0 +1,57 @@
+*{
+    background-color: rgb(251, 250, 252);
+}
+
+.rectangulo1{
+    position: absolute;
+    width: 88%;
+    height: 20%;    
+    left: 8%;
+    top: 10%;
+
+    background: rgb(102, 69, 128);
+
+}
+
+.rectangulo2{
+
+    position: absolute;
+    width: 40%;
+    height: 42%;
+    left: 30%;
+    top: 45%;
+
+    border-radius: 20px;
+    padding: 2%;
+    background: rgb(102, 69, 128);
+
+}
+
+
+.titulo{
+    position: absolute;
+    width: 88%;
+    font-size: 20mm;
+    text-align: center;
+    font-family: monospace;
+    height: 20%;
+    left: 5%;
+    top: 5%;
+
+    background: rgb(214, 175, 238);
+
+}
+
+.txtAreaMensaje{
+    position: absolute;
+    width: 88%;
+    font-size: 20mm;
+    text-align: center;
+    font-family: monospace;
+    height: 20%;
+    left: 5%;
+    top: 40%;
+
+    border-radius: 40px;
+    background: rgb(170, 170, 170);
+}
