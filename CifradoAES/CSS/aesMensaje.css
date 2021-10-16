@@ -1,5 +1,6 @@
 *{
     background-color: rgb(251, 250, 252);
+    font-family: fantasy;
 }
 
 .rectangulo1{
@@ -9,7 +10,7 @@
     left: 8%;
     top: 10%;
 
-    background: rgb(102, 69, 128);
+    background: rgb(34, 34, 34);
 
 }
 
@@ -23,7 +24,7 @@
 
     border-radius: 20px;
     padding: 2%;
-    background: rgb(102, 69, 128);
+    background: rgb(255, 255, 255);
 
 }
 
@@ -33,25 +34,96 @@
     width: 88%;
     font-size: 20mm;
     text-align: center;
-    font-family: monospace;
+    font-family: fantasy;
     height: 20%;
     left: 5%;
     top: 5%;
 
-    background: rgb(214, 175, 238);
+    background: rgb(211, 211, 211);
 
 }
 
-.txtAreaMensaje{
-    position: absolute;
-    width: 88%;
-    font-size: 20mm;
-    text-align: center;
-    font-family: monospace;
-    height: 20%;
-    left: 5%;
-    top: 40%;
 
+.txtAreaMensaje{
+
+    position: absolute;
+  
+    border: 1px solid #ccc;
+    display: inline-block; 
+    padding: 2.5%;
+    font-size: 5mm;
+
+    cursor: pointer;
+    top: 48%;
+    left: 5%;
+    width: 35%;
     border-radius: 40px;
-    background: rgb(170, 170, 170);
+    border: 2px solid black;
+
+
+}
+
+.etiMensaje{
+    position: absolute;
+    font-size: 8mm;
+    text-align: center;
+    left: 6%;
+    top: 38%;
+
+}
+
+.etiClave{
+    position: absolute;
+    font-size: 8mm;
+    text-align: center;
+    left: 50%;
+    top: 38%;
+}
+
+.passMensaje{
+    position: absolute;
+    width: 40%;
+    font-size: 5mm;
+    text-align: center;
+    height: 15%;
+    left: 50%;
+    top: 48%;
+
+    border: 2px solid rgb(7, 7, 7);
+    border-radius: 40px;
+    background: rgb(251, 250, 252);
+
+}
+
+.botonCifrar{
+    position: absolute;
+    width: 10%;
+    font-size: 8mm;
+    text-align: center;
+    height: 8%;
+    left: 43%;
+    top: 80%;
+    border-radius: 10px;
+
+}
+/*
+.botonCifrar:hover{
+    background-color: rgb(7, 7, 7);
+    color: white;
+}
+*/
+
+
+.rectangulo3{
+    position: absolute;
+    width: 10%;
+    font-size: 8mm;
+    text-align: center;
+    height: 8%;
+    left: 44%;
+    top: 82%;
+    border-radius: 10px;
+
+    background: rgb(7, 7, 7);
+
 }
